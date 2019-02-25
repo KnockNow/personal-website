@@ -33,19 +33,3 @@ ReactDom.render(
   <App />,
   document.getElementById('app')
 )
-
-// var code = '++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.'; var inp = '23\n'; var out = '';
-// var codeSize = code.length; var i = 0, ip = 0, cp = 0, dp = 0, m = {};
-// var loopIn = {}, loopOut = {}; var tmp = []; for ( var cp = 0; cp < codeSize ; cp++ ) if ( code[cp] == '[' ) tmp.push(cp); else if ( code[cp] == ']' ) loopOut[loopIn[cp] = tmp.pop()] = cp;
-// for (var cp = 0; cp < codeSize && i < 100000; cp++, i++) {
-//   switch(code[cp]) {
-//     case '>': dp++; break;
-//     case '<': dp--; break;
-//     case '+': m[dp] = ((m[dp]||0)+1)&255; break
-//     case '-': m[dp] = ((m[dp]||0)-1)&255; break;
-//     case '.': out += String.fromCharCode(m[dp]); break;
-//     case ',': m[dp] = inp.charCodeAt(ip++)||0; break;
-//     case '[': m[dp]||(cp=loopOut[cp]); break;
-//     case ']': cp = loopIn[cp]-1; break;
-//   }
-// } console.log(out);

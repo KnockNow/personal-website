@@ -70,8 +70,6 @@ const Bloc = ({item}) => {
 }
 
 class WorksList extends React.Component {
-
-
   render() {
     const { data } = this.props;
     return (

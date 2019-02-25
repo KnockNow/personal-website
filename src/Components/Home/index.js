@@ -18,7 +18,6 @@ const StarterAnimation = keyframes`
   }
 `
 
-
 const StartAnimText = keyframes`
   0% {
     color: #000;
@@ -82,6 +81,21 @@ const Menu = styled.div`
   }
 `
 
+const Footer = styled.div`
+  color: #919191;
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.2em;
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 200ms;
+    &:hover {
+      letter-spacing: 2px;
+    }
+  }
+`;
+
 class Home extends React.Component {
   render() {
     return (
@@ -94,6 +108,9 @@ class Home extends React.Component {
         <Menu>
           <Link to="/works">works</Link>
         </Menu>
+        <Footer>
+          <h5>This website is available in open source on my <a target="_blank" href="https://github.com/KnockNow/personal-website">Github</a>.</h5>
+        </Footer>
       </Container>
     )
   }
