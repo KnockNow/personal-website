@@ -71,9 +71,10 @@ const Bloc = ({item}) => {
 
 class WorksList extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data, title } = this.props;
     return (
       <Container>
+        <h2>{title}</h2>
         {data.map((item, index) => (<Bloc key={index} item={item} />))}
       </Container>
     )

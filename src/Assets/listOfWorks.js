@@ -4,10 +4,10 @@ const listOfWorks = [
     date: '2018',
     society: '',
     description: 'I train developers on React (and its ecosyteme), functional programming and JavaScript.',
-    link: {
-      name: 'react-formation',
-      url: 'https://github.com/KnockNow/react-formation'
-    },
+    // link: {
+    //   name: 'react-formation',
+    //   url: 'https://github.com/KnockNow/react-formation'
+    // },
   },
   {
     title: 'Freelance Web Developer Front-End',

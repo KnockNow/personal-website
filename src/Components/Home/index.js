@@ -107,6 +107,7 @@ class Home extends React.Component {
         </Title>
         <Menu>
           <Link to="/works">works</Link>
+          <Link to="/contact">contact</Link>
         </Menu>
         <Footer>
           <h5>This website is available in open source on my <a target="_blank" href="https://github.com/KnockNow/personal-website">Github</a>.</h5>

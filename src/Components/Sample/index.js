@@ -6,7 +6,6 @@ const Container = styled.div`
   color: #fff;
   background-color: #000;
   padding: 0 8em;
-  margin: -8px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,13 +42,13 @@ const Content = styled.div`
   }
 `;
 
-class How extends React.Component {
+class Contact extends React.Component {
   render() {
     return (
       <Container>
         <Header>
           <Link to="/">{'[<]'}</Link>
-          <Title>How</Title>
+          <Title>Contact</Title>
         </Header>
         <Content>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ante enim. Suspendisse nec odio dolor. Maecenas efficitur eros ante, quis viverra ex pulvinar eget. Fusce sit amet consectetur lectus. Ut luctus erat orci, nec dictum felis vulputate ut. Sed rhoncus nisi id neque euismod, eu pellentesque nunc varius. Fusce in ipsum sollicitudin, blandit ex nec, rhoncus felis. Ut id ipsum auctor, consectetur enim id, mattis lacus. Quisque faucibus libero dolor, a maximus nulla imperdiet posuere. Nullam sit amet sagittis eros, in mollis arcu. Aliquam erat volutpat. Praesent eget nibh eu tortor porta eleifend. Mauris sed eros est. Suspendisse eu metus massa. Aenean lobortis finibus est, nec fermentum tortor feugiat ac.</p>
@@ -59,4 +58,4 @@ class How extends React.Component {
   }
 }
 
-export default How
+export default Contact

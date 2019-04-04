@@ -5,7 +5,6 @@ import WorksList from 'Components/WorksList'
 import ProjectList from 'Components/ProjectList'
 
 import listOfWorks from 'Assets/listOfWorks'
-import listOfPersonalWorks from 'Assets/listOfPersonalWorks'
 
 const Container = styled.div`
   padding: 1em;
@@ -31,26 +30,43 @@ const Title = styled.h1`
   text-align: center;
   margin-bottom: 2em;
   color: #fff;
+  margin-bottom: 3em;
 `;
 
-const Split = styled.div`
+const RowContact = styled.div`
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  a {
+    color: red;
+    font-size: 1.3em;
+    margin-right: 1em;
+    display: block;
+  }
+  h3 {
+    font-size: 1.5em;
+    /* color: blue; */
+    display: block;
+  }
 `;
 
-class Works extends React.Component {
+class Contact extends React.Component {
   render() {
     return (
       <Container>
         <LinkS to="/">{'< return'}</LinkS>
-        <Title>works</Title>
-        <Split>
-          <WorksList data={listOfWorks} title='Professional' />
-          <WorksList data={listOfPersonalWorks} title='Personal' />
-        </Split>
+        <Title>contact</Title>
+        <RowContact>
+          <h3>william.heliejoly@gmail.com</h3>
+        </RowContact>
+        <RowContact>
+          <a target="_blank" href="https://www.linkedin.com/in/williamheliejoly">[ linkedin ]</a>
+        </RowContact>
       </Container>
     )
   }
 }
 
-export default Works
+export default Contact
